@@ -8,8 +8,6 @@ def main():
     parser.add_argument("target_dir", help="Target Directory", type=str)
     args = parser.parse_args()
 
-    target_dir = '/media/Storage/CopyTest/Target'
-
     files = os.listdir(args.source_dir)
     for file in files:
         full_path_src = os.path.join(args.source_dir, file)
