@@ -8,7 +8,7 @@ This project is targeted for a very specific use case, if you're going to try an
 - [Macrodroid](https://play.google.com/store/apps/details?id=com.arlosoft.macrodroid&hl=en_US)
 - [Termux](https://f-droid.org/packages/com.termux/)
 - [Termux:Tasker](https://f-droid.org/es/packages/com.termux.tasker/)
-- The files from this repository
+- The files from [this repository](https://github.com/Synt4x3rror/Macrodroid_Python_MoveFiles)
 - Android: A file manager that will allow you to read/write to the root partition (optional)
 - Optional: A Micro SD card, but you could move your files to another directory of your choice.
 
@@ -17,7 +17,7 @@ This project is targeted for a very specific use case, if you're going to try an
 1. Download Macrodroid from the playstore. Give all the required permissions in order for the app to function properly. You may also need to install helper apps for your device. For more info, visit [This](https://macrodroidforum.com/wiki/index.php/MacroDroid_Wiki) link.
 2. Download Termux from F-Droid. Give it the required permissions
 3. Download Termux:Tasker plugin from F-Droid. Give it the required permissions
-4. Copy the files from this repository to the android device ([main.py](./main.py), [run.sh](./run.sh)). I used the Downloads directory as example. Make sure to use a directory in the internal storage (not on the SD Card).
+4. Copy the files from [this repository](https://github.com/Synt4x3rror/Macrodroid_Python_MoveFiles) to the android device ([main.py](./main.py), [run.sh](./run.sh)). I used the Downloads directory as example. Make sure to use a directory in the internal storage (not on the SD Card).
 5. Open termux and navigate to the directory where you copied the scripts.
    ![Change Directory](./github/images/cd_downloads.png)
 6. Use the chmod command to assign the execution permission to [run.sh](./run.sh)
