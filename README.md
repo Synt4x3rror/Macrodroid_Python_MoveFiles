@@ -52,8 +52,9 @@ This project is targeted for a very specific use case, if you're going to try an
 13. On the executable path copy the path to the .sh file. See step 9.
 14. On the arguments box, copy IN ORDER the path to the python file, path to source directory, and path to target directory. Leave the rest of the parameters as default. Press the save button at the top left.\
    <img src="./github/images/termux:tasker.png" height="800"></img>
-15. Leave parameters as default and press OK
 
+15. Leave parameters as default and press OK\
    <img src="./github/images/termux:tasker2.png" height="800"></img>
+
 16. Press on the bottom right icon to save your macro
 17. Test your macro. Any issues should be catched by the macrodroid log. Best of luck!
