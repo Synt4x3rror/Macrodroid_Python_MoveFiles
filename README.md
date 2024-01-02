@@ -1,7 +1,9 @@
-# Purpose
+# Copy Files to Directory - Termux + Python + Macrodroid
+
+## Purpose
 This file will detail the steps required to move files from one directory in the Android filesystem to the external SD Card using a python script, on macrodroid. I'm doing this because google camera doesn't support saving photos to the external Micro SD card, and I've read you can use macrodroid and a bash script to move files periodically. I'm doing the actual file movement script in python because I know way more python than bash :-)
 
-# Dependecies
+## Dependecies
 This project is targeted for a very specific use case, if you're going to try and replicate this, you will need the following:
 
 - A phone or tablet running Android OS. At the time of writing, Android 13 was used. Device must be rooted.
@@ -12,7 +14,7 @@ This project is targeted for a very specific use case, if you're going to try an
 - Android: A file manager that will allow you to read/write to the root partition (optional)
 - Optional: A Micro SD card, but you could move your files to another directory of your choice.
 
-# Instructions
+## Instructions
 
 1. Download Macrodroid from the playstore. Give all the required permissions in order for the app to function properly. You may also need to install helper apps for your device. For more info, visit [This](https://macrodroidforum.com/wiki/index.php/MacroDroid_Wiki) link.
 2. Download Termux from F-Droid. Give it the required permissions
@@ -24,8 +26,11 @@ This project is targeted for a very specific use case, if you're going to try an
     ```
     chmod +x run.sh
     ```
-7. Create a directory on the termux directory _(The /Scripts part is optional)_
-    ```
+7. Create a /tasker directory on the termux directory. I'm also creating a /Scripts directory but it's optional.
+   ```
+   mkdir ~/.termux/tasker
+   ```
+   ```
    mkdir ~/.termux/tasker/Scripts
     ```
    ![Create Directory in Termux Environment](./github/images/mkdir_termux.png)
@@ -49,8 +54,8 @@ This project is targeted for a very specific use case, if you're going to try an
    <img src="./github/images/Initial_steps_md.png" height="800"></img>
 
 12. On the actions block add a new action. Choose Applications > Tasker/Locale Plugin > Termux:Tasker > Termux
-13. On the executable path copy the path to the .sh file. See step 9.
-14. On the arguments box, copy IN ORDER the path to the python file, path to source directory, and path to target directory. Leave the rest of the parameters as default. Press the save button at the top left.\
+13. On the executable path copy the path to the .sh file. See step 9
+14. On the arguments box, copy IN ORDER the path to the python file, path to source directory, and path to target directory. Leave the rest of the parameters as default. Press the save button on the top left.\
    <img src="./github/images/termux:tasker.png" height="800"></img>
 
 15. Leave parameters as default and press OK\
