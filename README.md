@@ -43,11 +43,12 @@ This project is targeted for a very specific use case, if you're going to try an
    - Path to python file [main.py](./main.py)
    - Source directory from where to move photos from
    - Target Directory
+
    Example:
-   ```commandline
+   ```
    /data/data/com.termux/files/home/.termux/tasker/Scripts/run.sh "/storage/emulated/0/Download/Scripts/main.py" "/storage/emulated/0/DCIM/Camera" "/storage/6332-3630/DCIM"
    ```
-   If you got "Script Finished" as output, congrats! Script ran successfully!
+   If you get "Script Finished" as output, congrats! Script ran successfully!
    ![Script Test](./github/images/script_test.png)
 10. On Macrodroid choose the "Add Macro" button. On the next screen assign the macro a name.
 11. Choose a trigger that works for you. The most basic example I could think of is the widget button, so I'll be using that one in this example.\
