@@ -1,5 +1,3 @@
-# Copy files from directoy using python
-
 # Purpose
 This file will detail the steps required to move files from one directory in the Android filesystem to the external SD Card using a python script, on macrodroid. I'm doing this because google camera doesn't support saving photos to the external Micro SD card, and I've read you can use macrodroid and a bash script to move files periodically. I'm doing the actual file movement script in python because I know way more python than bash :-)
 
@@ -47,14 +45,15 @@ This project is targeted for a very specific use case, if you're going to try an
    If you got "Script Finished" as output, congrats! Script ran successfully!
    ![Script Test](./github/images/script_test.png)
 10. On Macrodroid choose the "Add Macro" button. On the next screen assign the macro a name.
-11. Choose a trigger that works for you. The most basic example I could think of is the widget button, so I'll be using that one in this example.
-   ![Macrodroid Steps](./github/images/script_test.png)
+11. Choose a trigger that works for you. The most basic example I could think of is the widget button, so I'll be using that one in this example.\
+   <img src="./github/images/Initial_steps_md.png" height="800"></img>
+
 12. On the actions block add a new action. Choose Applications > Tasker/Locale Plugin > Termux:Tasker > Termux
 13. On the executable path copy the path to the .sh file. See step 9.
-14. On the arguments box, copy IN ORDER the path to the python file, path to source directory, and path to target directory. Leave the rest of the parameters as default. Press the save button at the top left.
-   ![Termux:Tasker](./github/images/termux:tasker.png)
+14. On the arguments box, copy IN ORDER the path to the python file, path to source directory, and path to target directory. Leave the rest of the parameters as default. Press the save button at the top left.\
+   <img src="./github/images/termux:tasker.png" height="800"></img>
 15. Leave parameters as default and press OK
 
-   ![Termux:Tasker](./github/images/termux:tasker2.png)
+   <img src="./github/images/termux:tasker2.png" height="800"></img>
 16. Press on the bottom right icon to save your macro
 17. Test your macro. Any issues should be catched by the macrodroid log. Best of luck!
