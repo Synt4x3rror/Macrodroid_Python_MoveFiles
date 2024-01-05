@@ -10,6 +10,7 @@ This project is targeted for a very specific use case, if you're going to try an
 - [Macrodroid](https://play.google.com/store/apps/details?id=com.arlosoft.macrodroid&hl=en_US)
 - [Termux](https://f-droid.org/packages/com.termux/)
 - [Termux:Tasker](https://f-droid.org/es/packages/com.termux.tasker/)
+- [Python](https://wiki.termux.com/wiki/Python) for termux
 - The files from [this repository](https://github.com/Synt4x3rror/Macrodroid_Python_MoveFiles)
 - Android: A file manager that will allow you to read/write to the root partition (optional)
 - Optional: A Micro SD card, but you could move your files to another directory of your choice.
